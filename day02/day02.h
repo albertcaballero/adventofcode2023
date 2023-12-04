@@ -1,5 +1,5 @@
-#ifndef AOC_2023_01
-# define AOC_2023_01
+#ifndef AOC_2023_02
+# define AOC_2023_02
 
 #include "../gnl/get_next_line.h"
 #include <stdio.h>
@@ -11,6 +11,6 @@
 #define BLUE 14
 
 int	ft_atoi(const char *str);
-int	ft_strncmp(char *s1, char *s2, size_t n);
+int	ft_strncmp(char *s1, char *s2, int n);
 
 #endif

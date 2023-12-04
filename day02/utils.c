@@ -1,3 +1,5 @@
+#include "day02.h"
+
 int	ft_atoi(const char *str)
 {
 	int	i;
