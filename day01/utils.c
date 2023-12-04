@@ -31,3 +31,41 @@ int	ft_isdigit(int c)
 		return (0);
 	return (1);
 }
+
+int	ft_strncmp(char *s1, char *s2, size_t n)
+{
+	size_t			i = 0;
+	unsigned char	*ps1;
+	unsigned char	*ps2;
+
+	ps1 = (unsigned char *) s1;
+	ps2 = (unsigned char *) s2;
+	while ((i < n) && ((s1[i] != '\0') || (s2[i] != '\0')))
+	{
+		if (ps1[i] != ps2[i])
+			return (ps1[i] - ps2[i]);
+		i++;
+	}
+	if (s1[i] == s2[i])
+		return (0);
+	return (0);
+}
+
+int	ft_rev_strncmp(char *s1, char *s2)
+{
+	size_t			i = ft_strlen(s1) - 1;
+	unsigned char	*ps1;
+	unsigned char	*ps2;
+
+	ps1 = (unsigned char *) s1;
+	ps2 = (unsigned char *) s2;
+	while ((i >= 0) && ((s1[i] != '\0') || (s2[i] != '\0')))
+	{
+		if (ps1[i] != ps2[i])
+			return (ps1[i] - ps2[i]);
+		i--;
+	}
+	if (s1[i] == s2[i])
+		return (0);
+	return (0);
+}
