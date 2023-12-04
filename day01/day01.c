@@ -56,4 +56,11 @@ int	main(void)
 	}
 	printf ("%i\n", result);
 	free (line);
+	close (fd);
+	return (0);
 }
+
+//for bonus: custom strncmp forwards and backwards
+//char ** of numbers, index represents int for the return
+//position of the array determines if a number goes first or a digit
+	//save index when starting strncmp
