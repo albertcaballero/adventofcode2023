@@ -1,5 +1,3 @@
-#include "day01.h"
-
 int	ft_atoi(const char *str)
 {
 	int	i;
@@ -25,16 +23,9 @@ int	ft_atoi(const char *str)
 	return (numb * flag);
 }
 
-int	ft_isdigit(int c)
+int	ft_strncmp(char *s1, char *s2, int n)
 {
-	if (c < 48 || c > 57)
-		return (0);
-	return (1);
-}
-
-int	ft_strncmp(char *s1, char *s2, size_t n)
-{
-	size_t			i = 0;
+	int			i = 0;
 	unsigned char	*ps1;
 	unsigned char	*ps2;
 

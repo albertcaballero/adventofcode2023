@@ -6,10 +6,11 @@
 #include <stdlib.h>
 #include <fcntl.h>
 
+#define RED 12
+#define GREEN 13
+#define BLUE 14
+
 int	ft_atoi(const char *str);
-int	ft_isdigit(int c);
 int	ft_strncmp(char *s1, char *s2, size_t n);
-int	check_first_number(char *line);
-int	check_last_number(char *line);
 
 #endif
